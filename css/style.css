@@ -18,7 +18,17 @@ img {
   border-style: none;
 }
 
-
+.gallery img.thumbnail {
+  width: 25%; /* 1/4サイズにする */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+.gallery img.thumbnail:hover {
+  transform: scale(1.05);
+  cursor: zoom-in;
+}
 
 .pc-only {
   display: block;
@@ -547,4 +557,62 @@ img {
     line-height: 1.7;
     margin-bottom: 20px;
   }
+}
+/* ==== 白黒反転モード ==== */
+body {
+  background-color: #111;
+  color: #eee;
+}
+
+a {
+  color: #1ca9e3;
+}
+
+.header {
+  background-color: #000;
+  box-shadow: 0 5px 10px -6px rgba(255,255,255,.1);
+}
+
+.header-logo a,
+.gnav-item a {
+  color: #eee;
+}
+
+.gnav-item a:after {
+  background-color: #eee;
+}
+
+.section:nth-of-type(odd) {
+  background-color: #222;
+}
+
+.title {
+  color: #eee;
+}
+
+.works-item {
+  color: #eee;
+}
+
+.works-img img {
+  border: 1px solid #444;
+}
+
+.article-body h3::before {
+  background-color: #eee;
+}
+
+.footer {
+  background-color: #000;
+}
+
+.copyright {
+  color: #999;
+}
+
+.page-top {
+  background-color: #eee;
+}
+.page-top .material-icons-outlined {
+  color: #111;
 }
