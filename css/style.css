@@ -19,7 +19,7 @@ img {
 }
 
 .gallery img.thumbnail {
-  width: 25%; /* 1/4サイズにする */
+  width: 50%; /* 1/4サイズにする */
   height: auto;
   object-fit: cover;
   border-radius: 8px;
